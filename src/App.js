@@ -12,18 +12,18 @@ function App() {
   return (
     <Router>
       <AuthProvider>
-      <Header />
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/user-login" element={<Login />}/>
-          <Route path="/register" element={<Register />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/shop" element={<Shop />}/>
-          <Route path="/cart" element={<Cart />}/>
-          <Route path="*" element={<Home />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/user-login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<Home />} />
         </Routes>
         <Footer />
-        </AuthProvider>
+      </AuthProvider>
     </Router>
   );
 }
